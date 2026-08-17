@@ -15,10 +15,9 @@
       componente en su propia carpeta.
 - [ ] Servicios nuevos de `data-access/api/`: una clase con `providedIn: 'root'` y su spec.
 - [ ] API pública devuelve `Promise` o `Signal`.
+- [ ] Cada vista nueva es su propio feature; ningún feature quedó con dos `.page.ts`.
 {{ARQ_CHECKLIST_ITEM}}
 - [ ] La pantalla cubre `idle / loading / success / empty / error`.
-- [ ] Solo componentes STL existentes en la versión instalada.
-- [ ] IDs y accesibilidad aplicados.
 - [ ] Reporta explícitamente cualquier regla que no pudiste cumplir y por qué.
 
 ---

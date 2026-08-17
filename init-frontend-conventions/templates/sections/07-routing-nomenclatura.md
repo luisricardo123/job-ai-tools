@@ -22,16 +22,16 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        loadComponent: () => import('./features/.../page/inicial.page'),
+        loadComponent: () => import('./features/transfer-list/page/transfer-list.page'),
       },
       // Las demás pantallas van aquí dentro, como hermanas de la inicial:
       {
         path: 'detalle/:id',
-        loadComponent: () => import('./features/.../page/detalle.page'),
+        loadComponent: () => import('./features/transfer-detail/page/transfer-detail.page'),
       },
       {
         path: 'pago/:id',
-        loadComponent: () => import('./features/.../page/pago.page'),
+        loadComponent: () => import('./features/transfer-payment/page/transfer-payment.page'),
       },
     ],
   },

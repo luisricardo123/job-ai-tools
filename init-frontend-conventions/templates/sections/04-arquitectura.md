@@ -1,8 +1,14 @@
 ## Arquitectura
 
-Arquitectura basada en **features** (una vista/funcionalidad concreta — recuerda que el propio
-micro-frontend ya es una funcionalidad dentro de la banca de empresas, así que normalmente hay
-pocos features, no decenas).
+Arquitectura basada en **features**.
+
+**Una vista = un feature.** Si el requerimiento pide N vistas, se crean N carpetas dentro de
+`features/`, cada una con su estructura completa. Nunca un feature con varias páginas, nunca una
+carpeta `pages/`. Esta regla no admite excepción por "las dos vistas son parecidas" ni por "las dos
+consumen el mismo endpoint" — si comparten algo real, eso vive en `shared/`.
+
+Como el propio micro-frontend ya es una funcionalidad dentro de la banca de empresas, normalmente
+hay pocos features, no decenas.
 
 ```
 src/app/
