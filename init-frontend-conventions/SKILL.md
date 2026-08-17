@@ -92,7 +92,6 @@ la entrevista**.
 | `{{SKILL_ANGULAR}}` | `angular-best-practices` |
 | `{{SKILL_OPENAPI}}` | `process-openapi` |
 | `{{SKILL_MOCK_SERVE}}` | `mock-serve` |
-| `{{SKILL_DESIGN_SYSTEM}}` | `bcp-design-system` |
 | `{{AGENTE_DESIGN_TO_CODE}}` | `fem-web.design-to-code` |
 
 Ninguno de estos valores está pendiente: todos tienen su nombre real, incluido el del agente de

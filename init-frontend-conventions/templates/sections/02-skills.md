@@ -13,7 +13,6 @@ skills traen el estándar general de Angular, este archivo trae las decisiones d
 | `{{SKILL_TESTING}}` | Escribe las pruebas unitarias con la configuración del banco. | Crees una pantalla o servicio nuevo — sin specs no está terminado. |
 | `{{SKILL_MOCK_SERVE}}` | Levanta el backend local ficticio y arma los JSON de mocks. | Necesites datos simulados: el backend todavía no existe, o quieres reproducir un escenario de error concreto. |
 | `{{SKILL_OPENAPI}}` | Traduce un contrato `openapi.yaml` a los tipos del proyecto. | Recibas un contrato del backend, antes de crear `dtos/`/`models/`. |
-| `{{SKILL_DESIGN_SYSTEM}}` | Fuente del lenguaje visual de BCP: convenciones de layout, anatomía de página y variantes de componente con su criterio de uso. | Necesites saber cómo debe verse o comportarse visualmente una pantalla, o qué variante de un componente corresponde a un caso concreto. |
 
 | Agente | Para qué sirve | Cárgala cuando |
 |---|---|---|
