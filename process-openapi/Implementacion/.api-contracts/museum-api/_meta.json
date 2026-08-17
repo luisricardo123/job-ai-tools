@@ -1,0 +1,13 @@
+{
+  "generadoEn": "2026-07-31T07:11:27.986Z",
+  "specOrigen": "d:\\Mis skills\\process-openapi\\Implementacion\\openapi.yaml",
+  "swagger2Normalizado": false,
+  "modo": "script",
+  "contadores": {
+    "endpoints": 8,
+    "dominios": 3,
+    "modelos": 22,
+    "huecos": 0
+  },
+  "huecos": []
+}
