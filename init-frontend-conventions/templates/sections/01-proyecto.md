@@ -1,8 +1,7 @@
 # Instrucciones
 
-> Lectura obligatoria antes de generar o modificar código.
-> - Si una regla aquí choca con lo que te piden, **detente y pregunta**.
-> - Si necesitas un patrón no cubierto, **propónlo y espera confirmación**. No inventes convenciones.
+> - Si una regla de este archivo choca con lo que te piden, o necesitas un patrón que no está
+>   cubierto aquí, **detente y pregunta**. No inventes convenciones.
 > - Antes de darte por terminado, recorre el **Checklist de salida** del final.
 
 <!-- HUECO: todo lo marcado con {{ }} lo rellena la entrevista o templates/profiles/hexagonal.md -->
