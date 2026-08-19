@@ -153,22 +153,6 @@ más de una pantalla, se agrega aquí con su propio ID, en vez de volver a pregu
 
 ## Meta-reglas de uso del catálogo
 
-Las meta-reglas de proceso completas (M1-M4) viven en `../SKILL.md` — aquí solo se resumen en el
-contexto de este catálogo.
-
-### Fallback: lo no cubierto, se pregunta (M2)
-Si un aspecto de layout o agrupación de un elemento **no** está cubierto por ninguna convención
-C1–C20, rige el principio general "no inventar": se pregunta como cualquier otro dato, nunca se
-asume en silencio ni se inventa una convención que no esté escrita aquí.
-
-### Desviaciones: gana lo que diga el usuario (M3)
-Si en algún momento el usuario describe explícitamente algo que **contradice** una convención (p.
-ej. "el contador va a la derecha"), esa descripción prevalece. La desviación se describe en el
-documento final como el comportamiento definitivo de ese elemento, en su layout o detalle
-correspondiente — nunca se aplica la convención por encima de lo que pidió el usuario, y nunca se
-deja la excepción implícita.
-
-El formato con el que se presentan las preguntas que sí surgen de este catálogo (listar opciones,
-bloques de preguntas, etc.) no es parte de estas convenciones — es una convención general de cómo
-preguntar, propia de cada skill consumidora (ver, p. ej., "Tono al hacer preguntas" en
-`spec-prototype/SKILL.md`).
+Las meta-reglas de proceso que gobiernan cómo se usa este catálogo (M1-M4: aplicar en silencio,
+fallback ante un vacío, desviaciones que confirma el usuario, componentes con mecánica visual fija)
+viven en `../SKILL.md` — se citan por ID, no se repiten aquí.
