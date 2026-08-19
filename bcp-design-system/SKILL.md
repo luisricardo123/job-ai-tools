@@ -88,3 +88,7 @@ conoce** — conocerla no la convierte en información que esta skill deba fijar
 - **Este catálogo está pensado para crecer.** Cuando aparezca un patrón, variante o región de página
   nueva que se repita igual en más de una pantalla/proyecto, se agrega aquí con su propio ID
   (`C#`, `A#`, `V-<COMPONENTE>#`) en vez de volver a resolverla cada vez desde cero.
+- **Qué va aquí y qué no.** Una regla nueva pertenece a este catálogo solo si es una verdad sobre
+  cómo se ve o se comporta visualmente una web de BCP, válida para cualquier proyecto. Si en cambio
+  regula cómo una skill consumidora conduce su propia entrevista o una decisión de implementación
+  propia de esa skill (no una convención visual), no va aquí.
