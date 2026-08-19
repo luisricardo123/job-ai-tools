@@ -157,7 +157,7 @@ quedar en una o dos frases claras, no en generalidades vagas.
 ### 4. Detalle de cada elemento
 Para cada elemento identificado en el bloque 3, captura sus detalles específicos usando
 `references/catalogo-elementos.md` como checklist según el tipo de elemento (botón, tabla,
-selector, campo de texto, contador, paginación, tabs, loader, etc.). **Carga ese archivo,
+selector, campo de texto, contador, paginación, tabs, esqueleto, etc.). **Carga ese archivo,
 las references de `bcp-design-system` (`convenciones-bcp.md`, `anatomia-pagina.md`,
 `catalogo-variantes.md`) y `references/reglas-obligatorias.md` antes de
 preguntar por los detalles** — son la fuente de verdad de qué preguntar por cada tipo, de las
@@ -165,7 +165,7 @@ convenciones fijas C1-C20/A#/V-# y de las reglas de proceso M1-M4/R6/R7/R8/R9/R1
 memoria. El layout y la agrupación ya cubiertos por una convención **no se preguntan** (M1): solo se
 captura el contenido variable (textos, opciones, columnas, validaciones, datos) y cualquier
 desviación explícita (M3). Cuando el elemento es un componente con mecánica visual fija (M4, p. ej.
-un loader), tampoco se pregunta esa mecánica — solo cuándo aparece y qué expone.
+un esqueleto de carga), tampoco se pregunta esa mecánica — solo cuándo aparece y qué expone.
 Excepción: el layout interno de los inputs de un formulario nunca cuenta como "ya cubierto" — R7 lo
 mantiene como pregunta obligatoria. Una columna de tabla de significado ambiguo (R8) y un dato con
 más de un formato posible (R9) tampoco cuentan como cubiertos hasta resolverlos.

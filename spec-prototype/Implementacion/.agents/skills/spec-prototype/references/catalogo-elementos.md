@@ -152,9 +152,9 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 - Cuál pestaña está activa por defecto.
 - Qué contiene cada pestaña (referenciar a la vista o sección correspondiente).
 
-## Elemento de carga (loader / spinner / esqueleto)
+## Esqueleto de carga (skeleton)
 - Si reemplaza una sección con contenido estructurado (p. ej. contador y tabla): ocupa la posición
-  exacta de ese contenido, resuelto por convención (V-LOADER1, M4) — no se pregunta ni se
+  exacta de ese contenido, resuelto por convención (V-ESQUELETO1, M4) — no se pregunta ni se
   redescribe su forma o animación; sí es variable cuánto contenido simula.
 - Qué acción dispara su aparición.
 - Dónde se muestra (reemplaza todo el contenido, aparece superpuesto, aparece solo en la sección

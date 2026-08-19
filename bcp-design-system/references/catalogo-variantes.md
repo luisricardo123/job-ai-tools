@@ -18,7 +18,7 @@ Mismo formato de dos partes que el resto del catálogo:
   caso que no encaje con claridad en ninguna variante descrita (fallback M2 — no se inventa).
 
 IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
-`V-MENSAJE#`, `V-CARD#`, `V-BADGE#`, `V-LOADER#`, `V-ENLACE#`, `V-ERRORCARGA#`…
+`V-MENSAJE#`, `V-CARD#`, `V-BADGE#`, `V-ESQUELETO#`, `V-ENLACE#`, `V-ERRORCARGA#`…
 
 ## Botón
 
@@ -92,13 +92,14 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
 - **Variable:** el texto del mensaje y el tono/severidad (informativo, advertencia), si no es
   evidente por el contexto.
 
-## Indicador de carga
+## Esqueleto de carga (skeleton)
 
-### V-LOADER1 · Placeholder: ocupa la posición exacta del contenido que reemplaza
+### V-ESQUELETO1 · Ocupa la posición exacta del contenido que reemplaza
 - **Se aplica en silencio:** mientras se carga una sección con contenido estructurado (p. ej.
-  contador y tabla), se muestra un placeholder en la posición exacta donde ese contenido va a
-  aparecer (p. ej. donde iría el contador, y donde irían las filas y columnas de la tabla). Por M4,
-  no se describe la forma ni la animación del placeholder — solo que existe y qué posición ocupa.
+  contador y tabla), se muestra un esqueleto (skeleton) en la posición exacta donde ese contenido
+  va a aparecer (p. ej. donde iría el contador, y donde irían las filas y columnas de la tabla).
+  Por M4, no se describe la forma ni la animación del esqueleto — solo que existe y qué posición
+  ocupa.
 - **Variable:** nada de la mecánica — es fija. Sí es variable cuánto contenido (cuántas
   filas/columnas) simula, según la sección que reemplaza.
 
