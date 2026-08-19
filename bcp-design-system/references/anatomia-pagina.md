@@ -58,7 +58,7 @@ contenido que la shell le entrega.
   indicador de progreso (stepper — ver detalle de variante en `catalogo-variantes.md`) centrado,
   ubicado entre el botón "Volver" (A1) y el título de la vista. El título y el texto instructivo
   (A3) se mantienen iguales en cada paso del flujo (el título no cambia por paso, salvo que el
-  usuario indique lo contrario). Al final de la página va una barra de acciones fija (ver A7).
+  usuario indique lo contrario). Al final de la página va una barra de acciones fija (ver A10).
 - **Variable:** la cantidad y nombre de los pasos del flujo concreto.
 
 ## A6 · Vista de confirmación/resultado de una operación: anatomía propia, centrada
@@ -74,13 +74,6 @@ contenido que la shell le entrega.
   detalle.
 - **Variable:** el ícono, el texto del encabezado/subtítulo, el contenido de los bloques de datos,
   y cuáles acciones existen.
-
-## A7 · Vista con pestañas: van inmediatamente debajo del título
-- **Se aplica en silencio:** cuando una vista organiza su contenido en pestañas, estas van
-  inmediatamente debajo del título (sin texto instructivo A3 entre medio, salvo que el usuario lo
-  confirme explícitamente para ese caso), y el contenido de la pestaña activa ocupa el resto de la
-  vista siguiendo su propia anatomía normal (formulario en card, tabla, etc.).
-- **Variable:** nombre y cantidad de pestañas, cuál está activa por defecto, contenido de cada una.
 
 ## A9 · Vista de detalle: misma anatomía que una vista de consulta
 - **Se aplica en silencio:** una vista de detalle (ver/editar un registro puntual) reutiliza la

@@ -147,7 +147,7 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 - Opciones de tamaño de página disponibles y el valor por defecto.
 
 ## Tabs / pestañas
-- Posición inmediatamente debajo del título resuelta por convención (A7). No se pregunta.
+- Posición de las pestañas respecto al título y al resto del contenido de la vista.
 - Nombre de cada pestaña, en orden.
 - Cuál pestaña está activa por defecto.
 - Qué contiene cada pestaña (referenciar a la vista o sección correspondiente).
