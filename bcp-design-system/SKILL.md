@@ -2,7 +2,7 @@
 name: bcp-design-system
 description: >
   Fuente única del sistema de diseño visual de las webs de BCP: las convenciones fijas de layout y
-  estilo que se repiten en todos los módulos (C1-C20), la anatomía de página compartida, y el
+  estilo que se repiten en todos los módulos (C1-C16), la anatomía de página compartida, y el
   catálogo de variantes de cada componente con el criterio de cuándo usar cada una. Úsala siempre
   que necesites saber cómo debe verse o comportarse visualmente una pantalla de BCP: al crear o
   diseñar una vista o pantalla nueva para una web de BCP (el caso de uso diario de un frontend de
@@ -30,8 +30,8 @@ sistema de diseño instalado en el proyecto; esta skill no la documenta ni siqui
 
 | Archivo | Cárgalo cuando... |
 |---|---|
-| `references/convenciones-bcp.md` (C1-C20) | Necesites las reglas fijas puntuales de layout/estilo ya resueltas: cards, posición de botón de búsqueda, contador, paginación, niveles de título, roles de color, alineación de columnas, formato de montos, orden de acciones. |
-| `references/anatomia-pagina.md` (A1...) | Necesites la estructura de la página como contenedor: qué regiones existen de arriba abajo y en qué orden, más allá del contenido de una vista puntual. |
+| `references/convenciones-bcp.md` (C1-C16) | Necesites las reglas fijas puntuales de layout/estilo ya resueltas: cards, posición de botón de búsqueda, contador, paginación, niveles de título, roles de color, alineación de columnas, formato de montos, orden de acciones. |
+| `references/anatomia-pagina.md` (A1-A7) | Necesites la estructura de la página como contenedor: qué regiones existen de arriba abajo y en qué orden, más allá del contenido de una vista puntual. |
 | `references/catalogo-variantes.md` (V-...) | Necesites decidir qué variante de un componente corresponde a un caso concreto (qué botón, qué tipo de mensaje, qué variante de card). |
 
 Carga siempre el archivo completo antes de responder o de escribir un documento que dependa de él —
@@ -39,7 +39,7 @@ no resumas estas convenciones de memoria; son la fuente única y están pensadas
 
 ## Meta-reglas de uso del catálogo (M1-M4)
 
-Gobiernan cómo se usa **todo** el contenido de esta skill (C1-C20, A#, V-#). Cualquier skill
+Gobiernan cómo se usa **todo** el contenido de esta skill (C1-C16, A#, V-#). Cualquier skill
 consumidora las cita por ID, no las repite.
 
 ### M1 · Aplicar las convenciones BCP en silencio

@@ -50,13 +50,13 @@ que reciba la especificación.
 ## Sistema de diseño BCP y reglas de proceso
 
 El sistema de diseño de BCP se repite igual en todos los módulos: layout, agrupación, jerarquía de
-título y anatomía de página son las mismas de una vista a otra (ver el catálogo C1-C20/A1-A10 de
+título y anatomía de página son las mismas de una vista a otra (ver el catálogo C1-C16/A1-A7 de
 `bcp-design-system` para el detalle puntual de cada convención). Por eso esas convenciones **no se
 preguntan**: se aplican en silencio y se registran en el documento. La fuente completa de ese sistema de diseño vive
 en la skill `bcp-design-system` (ver "Principio central" arriba) — **cárgala antes de preguntar o de
 escribir el documento final**, no la resumas de memoria:
-`bcp-design-system/references/convenciones-bcp.md` (C1-C20),
-`bcp-design-system/references/anatomia-pagina.md` (A1...) y
+`bcp-design-system/references/convenciones-bcp.md` (C1-C16),
+`bcp-design-system/references/anatomia-pagina.md` (A1-A7) y
 `bcp-design-system/references/catalogo-variantes.md` (V-...).
 
 Las meta-reglas que gobiernan *cómo* se usan esas convenciones (cuándo aplicar en silencio, cuándo
@@ -99,7 +99,7 @@ preguntar o escribir.
 Antes de cualquier otra cosa (incluso antes del "Punto de partida"), intenta abrir
 `bcp-design-system/SKILL.md` — skill hermana que debe estar instalada junto a esta en el mismo
 proyecto, nunca una copia embebida. Si no existe o no se puede leer, **detente de inmediato y
-avísalo explícitamente al usuario**: sin esa skill no hay fuente de convenciones C1-C20, A1-A10 ni
+avísalo explícitamente al usuario**: sin esa skill no hay fuente de convenciones C1-C16, A1-A7 ni
 V-# que aplicar, y esta skill no debe continuar parafraseando esas convenciones de memoria ni
 inventando un equivalente. No sigas con el "Punto de partida" ni con el "Procedimiento" hasta que
 la skill esté disponible.
@@ -156,7 +156,7 @@ quedar en una o dos frases claras, no en generalidades vagas.
   contadores, tabs, mensajes, etc.).
 - **Layout:** en qué orden o posiciones visuales están esos elementos entre sí (arriba/abajo,
   izquierda/derecha, agrupados en secciones, etc.). Buena parte del layout ya está resuelto por las
-  convenciones de `bcp-design-system` (C1-C20 para el layout dentro de una vista, A1-A10 para
+  convenciones de `bcp-design-system` (C1-C16 para el layout dentro de una vista, A1-A7 para
   la estructura de la página como contenedor — ver "Sistema de diseño BCP y reglas de proceso" para
   dónde cargarlas): aplícalas en
   silencio (M1) y no las preguntes. Pregunta (fallback M2) solo la
@@ -174,7 +174,7 @@ selector, campo de texto, contador, paginación, tabs, esqueleto, etc.). **Carga
 las references de `bcp-design-system` (ver "Sistema de diseño BCP y reglas de proceso" arriba)
 y `references/reglas-obligatorias.md` antes de
 preguntar por los detalles** — son la fuente de verdad de qué preguntar por cada tipo, de las
-convenciones fijas C1-C20/A#/V-# y de las reglas de proceso M1-M4/R6/R7/R8/R9/R10; no las resumas de
+convenciones fijas C1-C16/A#/V-# y de las reglas de proceso M1-M4/R6/R7/R8/R9/R10; no las resumas de
 memoria. El layout y la agrupación ya cubiertos por una convención **no se preguntan** (M1): solo se
 captura el contenido variable (textos, opciones, columnas, validaciones, datos) y cualquier
 desviación explícita (M3). Cuando el elemento es un componente con mecánica visual fija (M4, p. ej.
@@ -209,7 +209,7 @@ Como la prueba de concepto debe ser funcional para los usuarios, se necesitan da
   se resuelve por front sobre la totalidad de los registros ya recibidos, los datos mock deben
   generarse completos (todo el conjunto a demostrar), no solo los de la primera página.
 - **Formato de los valores mock:** los datos generados deben respetar el formato de moneda fijado
-  por convención (C13) y el formato de cualquier dato de varios formatos posibles que se haya
+  por convención (C12) y el formato de cualquier dato de varios formatos posibles que se haya
   confirmado con el usuario (R9 en `references/reglas-obligatorias.md`).
 
 ## Procedimiento
@@ -220,7 +220,7 @@ Como la prueba de concepto debe ser funcional para los usuarios, se necesitan da
 2. **Absorber primero.** Leer todo lo que el usuario ya describió (mensaje actual o conversación
    previa) y mapearlo a los bloques 1-7.
 3. **Aplicar convenciones BCP.** Para cada elemento identificado, mapearlo contra
-   `bcp-design-system` (C1-C20, A1-A10, V-# — ver "Sistema de diseño BCP y reglas de proceso" para
+   `bcp-design-system` (C1-C16, A1-A7, V-# — ver "Sistema de diseño BCP y reglas de proceso" para
    dónde cargarlas): toda convención que lo cubra se marca como resuelta
    (M1) y se aplica en silencio — no se pregunta, se registra directamente para el documento final.
    Si lo que describió el usuario contradice una convención, queda marcado como desviación (M3), no

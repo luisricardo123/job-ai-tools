@@ -2,7 +2,7 @@
 
 Fuente única de las convenciones **fijas** del sistema de diseño de las webs de BCP: patrones de
 layout, agrupación y jerarquía que se repiten igual en todos los módulos. `SKILL.md` y cualquier
-skill que consuma `bcp-design-system` las citan por su ID (C1…C20) — no las repiten.
+skill que consuma `bcp-design-system` las citan por su ID (C1…C16) — no las repiten.
 
 Cada convención tiene dos partes:
 - **Se aplica en silencio:** lo que ya está resuelto — nunca se pregunta, se registra directamente
@@ -78,15 +78,15 @@ más de una pantalla, se agrega aquí con su propio ID, en vez de volver a pregu
   genérico, esa excepción se registra (ver "Desviaciones" más abajo) — nunca se pregunta
   proactivamente por colores de fondo.
 
-## C10 · Alineación de columnas de tabla: texto a la izquierda, números a la derecha, montos en negrita
+## C9 · Alineación de columnas de tabla: texto a la izquierda, números a la derecha, montos en negrita
 - **Se aplica en silencio:** por defecto, las columnas de texto se alinean a la izquierda; las
   columnas numéricas (cantidades, conteos) se alinean a la derecha; las columnas de **montos**
   (importes de dinero) se alinean a la derecha y además van **en negrita**. El formato del valor de
-  un monto (símbolo, separadores, decimales) lo fija C13, no esta convención.
+  un monto (símbolo, separadores, decimales) lo fija C12, no esta convención.
 - **Variable:** cualquier excepción a ese default (p. ej. una columna centrada, o un monto sin
   negrita) sí se confirma con el usuario.
 
-## C11 · Filtro de rango de fechas: un solo componente
+## C10 · Filtro de rango de fechas: un solo componente
 - **Se aplica en silencio:** un rango de fechas es un único componente aunque se vea como dos
   inputs (fecha inicio y fecha final): su valor es el rango completo, no dos valores
   independientes. Toda referencia a obligatoriedad, validación o estado se expresa sobre **el
@@ -95,25 +95,25 @@ más de una pantalla, se agrega aquí con su propio ID, en vez de volver a pregu
 - **Variable:** el contenido — si el rango es obligatorio o no, el rango de fechas permitido, el
   valor por defecto.
 
-## C12 · Botón "Volver": la acción de menor énfasis de la vista, primera región de la página
+## C11 · Botón "Volver": la acción de menor énfasis de la vista, primera región de la página
 - **Se aplica en silencio:** todo botón cuya función es volver a la página/vista anterior usa el
-  énfasis de menor compromiso del catálogo de botones (ver `catalogo-variantes.md`, V-BOTON2) y va
+  énfasis de menor compromiso del catálogo de botones (ver `catalogo-variantes.md`, V-BOTON1) y va
   en la posición fija que define A1 en `anatomia-pagina.md`.
 - **Variable:** nada de posición o énfasis — es fijo. A lo sumo el texto del botón, si no es
   "Volver".
 
-## C13 · Formato de montos (importes de dinero)
+## C12 · Formato de montos (importes de dinero)
 - **Se aplica en silencio:** todo monto se muestra como `[símbolo de moneda] [número]`, donde el
   número usa **coma como separador de millares**, **punto como separador decimal** y **siempre dos
   decimales** — sin importar si son exactos. Ejemplos: `S/ 123,456.12`, `S/ 0.00`, `$ 1,200.50`.
   El formato numérico es idéntico para cualquier moneda; lo único que cambia es el símbolo. `S/ ` es
   el símbolo por defecto (Soles) cuando el usuario no indica otra moneda. Esta convención define el
   **formato del valor**; la alineación a la derecha y la negrita de la columna de montos en tabla
-  las define C10.
+  las define C9.
 - **Variable:** la moneda concreta de cada monto (símbolo) si no es evidente por el contexto o si el
   usuario indica explícitamente una distinta a Soles.
 
-## C15 · Separación entre secciones de una vista
+## C13 · Separación entre secciones de una vista
 - **Se aplica en silencio:** dentro de cada vista, las secciones/regiones (título, card de filtros,
   fila contador+acciones, tabla, paginación, bloques de datos, etc.) van separadas entre sí con
   espacio suficiente para que no se vean pegadas ni amontonadas; nunca quedan unas contra otras sin
@@ -121,14 +121,14 @@ más de una pantalla, se agrega aquí con su propio ID, en vez de volver a pregu
   consistente entre secciones contiguas.
 - **Variable:** nada — es fijo para toda vista; no se pregunta.
 
-## C16 · Márgenes de vista: existentes e iguales en todas las vistas
+## C14 · Márgenes de vista: existentes e iguales en todas las vistas
 - **Se aplica en silencio:** toda vista tiene márgenes respecto a los bordes de la pantalla (el
   contenido nunca queda pegado a los bordes), y esos márgenes son **los mismos en todas las vistas**
   del prototipo. No se requiere precisión de píxeles: basta con que haya un margen visible uniforme
   e idéntico de una vista a otra.
 - **Variable:** nada — es fijo; no se pregunta.
 
-## C17 · Tercer nivel de título: encabezado de sub-sección dentro de una card
+## C15 · Tercer nivel de título: encabezado de sub-sección dentro de una card
 - **Se aplica en silencio:** más allá de C6 (nivel 1, título principal de vista) y C7 (nivel 2,
   título secundario), existe un tercer nivel de título: el encabezado de una sub-sección de datos
   **dentro** de una card (p. ej. "Datos del girador", "Detalle del pago", "Datos de la operación").
@@ -141,9 +141,9 @@ más de una pantalla, se agrega aquí con su propio ID, en vez de volver a pregu
     el nivel 3.
 - **Variable:** el texto de cada encabezado de sub-sección.
 
-## C20 · Orden de un par de acciones en la misma fila: menor a mayor compromiso, izquierda a derecha
+## C16 · Orden de un par de acciones en la misma fila: menor a mayor compromiso, izquierda a derecha
 - **Se aplica en silencio:** cuando dos o más acciones conviven en una misma fila (p. ej. cancelar +
-  continuar en una barra de flujo — A10 —, o limpiar + buscar en un formulario — C2), van ordenadas
+  continuar en una barra de flujo — A7 —, o limpiar + buscar en un formulario — C2), van ordenadas
   de **menor a mayor compromiso**, de izquierda a derecha: la acción de menor énfasis (cancelar,
   limpiar) primero; la de mayor compromiso (guardar, enviar, confirmar) al final.
 - **Variable:** cuáles acciones concretas participan y su texto — el orden relativo entre ellas no

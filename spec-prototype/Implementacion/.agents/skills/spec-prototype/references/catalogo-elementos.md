@@ -13,9 +13,9 @@ propio sistema de diseño (color de borde, forma, animación) — ver M4.
 
 Las convenciones fijas del sistema de diseño BCP viven en la skill `bcp-design-system`: cards,
 contador, posición del botón de búsqueda, paginación, niveles de título, roles de color, alineación
-de columnas, formato de montos (`bcp-design-system/references/convenciones-bcp.md`, C1-C20);
+de columnas, formato de montos (`bcp-design-system/references/convenciones-bcp.md`, C1-C16);
 estructura de página y anatomía de vista (`bcp-design-system/references/anatomia-pagina.md`,
-A1-A10); y variantes de componente con su criterio de elección — énfasis de botón, mensajería,
+A1-A7); y variantes de componente con su criterio de elección — énfasis de botón, mensajería,
 badges, etc. (`bcp-design-system/references/catalogo-variantes.md`, V-#). Las
 reglas de proceso que gobiernan cómo se usan (aplicar en silencio, fallback, desviaciones,
 componentes con mecánica visual fija) son M1-M4, en el `SKILL.md` de `bcp-design-system`; las propias
@@ -28,26 +28,26 @@ esa convención.
 
 ## Título principal (heading de vista o sección)
 - Nivel de jerarquía: resuelto por convención — C6 si es el título principal de la vista, C7 si es
-  un título secundario o rótulo de card de formulario, C17 si es el encabezado de una sub-sección
+  un título secundario o rótulo de card de formulario, C15 si es el encabezado de una sub-sección
   dentro de una card de datos de solo lectura. No se pregunta.
 
 ## Botón
 - Si el botón es para **volver a la página/vista anterior**: es la acción de menor énfasis y su
-  posición está resuelta por convención (C12, A1). No se pregunta nada de estilo o posición; a lo
+  posición está resuelta por convención (C11, A1). No se pregunta nada de estilo o posición; a lo
   sumo el texto si no es "Volver".
 - ¿Tiene texto? ¿cuál?
 - ¿Tiene ícono? ¿a la izquierda o a la derecha del texto? ¿o es un botón solo de ícono?
 - Énfasis/importancia: si el botón es la acción de mayor compromiso de la vista/paso (principal),
   una acción secundaria que convive con esa principal (secundario), o la de menor compromiso —
-  volver, limpiar/reset— resuelto por convención (V-BOTON2); solo se pregunta si el rol del botón no
+  volver, limpiar/reset— resuelto por convención (V-BOTON1); solo se pregunta si el rol del botón no
   es evidente por el contexto.
 - Bajo qué condición pasa a deshabilitado, si aplica.
 - ¿Ocupa el ancho disponible o es de ancho ajustado al contenido?
 - ¿Qué acción dispara al presionarlo? (ver bloque de interacciones)
 - Posición/alineación respecto a los demás elementos del bloque en el que está: si el botón cae
   bajo una convención ya definida (p. ej. es el botón de envío de un formulario → C2, o de acción
-  de tabla → C4, o de volver → C12), se aplica en silencio. Si convive con otra acción en la misma
-  fila, el orden entre ambas lo resuelve C20. Si no, y tampoco es evidente por una convención
+  de tabla → C4, o de volver → C11), se aplica en silencio. Si convive con otra acción en la misma
+  fila, el orden entre ambas lo resuelve C16. Si no, y tampoco es evidente por una convención
   universal, se pregunta (fallback M2).
 
 ## Tabla
@@ -56,9 +56,9 @@ esa convención.
   qué dato representa y 2-3 valores de ejemplo — aunque el nombre sea corto y no dispare R6.
 - Si alguna columna contiene un dato con varios formatos posibles (fechas, horas, porcentajes,
   códigos), aplica (R9): se pregunta el formato una vez por tipo de dato. Los montos quedan fuera —
-  su formato ya lo resuelve C13.
+  su formato ya lo resuelve C12.
 - Alineación de cada columna, incluida la de montos, y el formato del valor de cualquier columna de
-  montos: resueltos por convención (C10 y C13 respectivamente); no se pregunta, salvo las
+  montos: resueltos por convención (C9 y C12 respectivamente); no se pregunta, salvo las
   excepciones a ese default y la moneda si no es evidente por el contexto.
 - ¿Reordenamiento de filas? Si sí, ¿cuáles columnas permiten ordenar y cuál es el orden por
   defecto (ascendente/descendente, y por qué columna)?
@@ -74,13 +74,13 @@ esa convención.
 - ¿Acciones a nivel de tabla completa (no de fila, p. ej. un botón de descarga)? Posición resuelta
   por convención (C4): **arriba de la tabla**, extremo opuesto al contador, misma fila. Solo se
   pregunta cuáles acciones existen y qué disparan.
-- ¿Alguna columna representa un estado? Se representa con la variante de badge (V-TABLA2); el color
+- ¿Alguna columna representa un estado? Se representa con la variante de badge (V-TABLA1); el color
   por valor se captura como en cualquier badge (ver "Etiqueta / distintivo de estado" más abajo,
-  V-BADGE2).
+  V-BADGE1).
 - ¿Algún otro valor de columna tiene un estilo condicional distinto a un estado? (p. ej. un monto
   negativo resaltado). ¿Cuál es la regla y cuál el estilo?
 - ¿Hay acciones por fila (dentro de la columna de acciones de esa fila, resuelto por convención —
-  V-TABLA3)? Solo se pregunta cuáles acciones existen y qué disparan.
+  V-TABLA2)? Solo se pregunta cuáles acciones existen y qué disparan.
 - ¿Se pueden seleccionar filas (checkboxes por fila)? ¿para qué se usa esa selección?
 - Estado vacío específico de la tabla (si difiere del estado vacío general de la vista); distinto
   del estado de error de carga (falla técnica al obtener los datos, no ausencia de resultados —
@@ -101,7 +101,7 @@ esa convención.
   correspondiente. No se pregunta cómo se presenta visualmente el error — lo resuelve el propio
   componente.
 - Formato o máscara especial (fecha, moneda, teléfono, etc.), si aplica. Para moneda, el formato del
-  valor está resuelto por convención (C13); no se pregunta, salvo la moneda concreta si no es
+  valor está resuelto por convención (C12); no se pregunta, salvo la moneda concreta si no es
   evidente por el contexto. Para cualquier otro dato con varios formatos posibles (fecha, hora,
   etc.), aplica (R9) — se pregunta el formato, una sola vez por tipo de dato a nivel de todo el
   prototipo.
@@ -124,7 +124,7 @@ esa convención.
 
 ## Bloque de datos agrupados (pares etiqueta-valor de solo lectura)
 Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Cantidad: 3", etc.
-- Contenido en card resuelto por convención (C1); su encabezado usa el nivel de título C17; varios
+- Contenido en card resuelto por convención (C1); su encabezado usa el nivel de título C15; varios
   bloques relacionados pueden compartir una sola card, separados por espacio (V-CARD1) — ninguno de
   estos tres puntos se pregunta.
 - Qué datos muestra y en qué orden.
@@ -171,7 +171,7 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
   columnas de tabla o bloques de datos.
 - Rango permitido (si aplica) y valor por defecto.
 - Si el filtro es un **rango de fechas** (fecha inicio + fecha final), es un solo componente cuyo
-  valor es el rango completo (C11): su obligatoriedad y validaciones se capturan y documentan sobre
+  valor es el rango completo (C10): su obligatoriedad y validaciones se capturan y documentan sobre
   el rango como una sola unidad, nunca sobre cada input por separado.
 
 ## Enlaces
@@ -201,6 +201,6 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 ## Etiqueta / distintivo de estado (badge)
 - Valores posibles y su texto.
 - Color asociado a cada valor: no es fijo, pero se pregunta ofreciendo como recomendación el mapeo
-  semántico de convención (V-BADGE2).
+  semántico de convención (V-BADGE1).
 - ¿Alguno de los valores necesita una aclaración secundaria adicional (p. ej. "Rechazada" + "Por
   usuario")? Se pregunta si aplica y su texto.

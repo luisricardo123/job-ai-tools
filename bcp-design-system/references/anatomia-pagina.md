@@ -28,7 +28,7 @@ contenido que la shell le entrega.
 ## A1 · Lo primero dentro del contenido: título, o "Volver" + título si hay navegación de vuelta
 - **Se aplica en silencio:** lo primero que renderiza el módulo, arriba de todo, es el título
   principal de la vista (C6). **Excepción:** si la vista tiene navegación de regreso a una vista
-  anterior, el botón "Volver" (C12) va primero, en su propia fila completa, y el título queda
+  anterior, el botón "Volver" (C11) va primero, en su propia fila completa, y el título queda
   debajo de él, en la fila siguiente.
 - **Variable:** si la vista concreta tiene o no navegación de vuelta.
 
@@ -45,13 +45,13 @@ contenido que la shell le entrega.
   datos de la operación y envíala al banco."). Es texto estándar (no título — no aplica C6/C7).
 - **Variable:** si la vista concreta lleva o no este texto, y su contenido.
 
-## A4 · Ancho del contenido: 100% del disponible, con margen fijo (C16)
+## A4 · Ancho del contenido: 100% del disponible, con margen fijo (C14)
 - **Se aplica en silencio:** el contenido del módulo no fija un ancho máximo propio ni se centra:
   ocupa el 100% del ancho que le entrega la shell, siempre respetando el margen horizontal y
-  vertical fijo de C16 (nunca pegado a los bordes de su propio contenedor).
+  vertical fijo de C14 (nunca pegado a los bordes de su propio contenedor).
 - **Variable:** nada — es fijo; no se pregunta.
 
-## A6 · Vista de confirmación/resultado de una operación: anatomía propia, centrada
+## A5 · Vista de confirmación/resultado de una operación: anatomía propia, centrada
 - **Se aplica en silencio:** al completarse una operación (envío, registro, solicitud), la vista de
   confirmación **no** sigue el patrón de A1-A2 (no hay "Volver" ni título alineado a la izquierda).
   En su lugar: un ícono ilustrativo centrado, un encabezado centrado confirmando el resultado, y una
@@ -65,19 +65,19 @@ contenido que la shell le entrega.
 - **Variable:** el ícono, el texto del encabezado/subtítulo, el contenido de los bloques de datos,
   y cuáles acciones existen.
 
-## A9 · Vista de detalle: misma anatomía que una vista de consulta
+## A6 · Vista de detalle: misma anatomía que una vista de consulta
 - **Se aplica en silencio:** una vista de detalle (ver/editar un registro puntual) reutiliza la
   misma anatomía que una vista de consulta (A1-A4): "Volver" si aplica, título con posible acción
   en la misma fila (A2), bloques de datos en card (C1), y si incluye un listado propio, ese listado
-  sigue las mismas convenciones de tabla (C3-C5, C10). No tiene una estructura envolvente
+  sigue las mismas convenciones de tabla (C3-C5, C9). No tiene una estructura envolvente
   distinta — lo único que cambia es el contenido central.
 - **Variable:** nada de la estructura — es fijo; sí es variable el contenido concreto de cada
   bloque.
 
-## A10 · Barra de acciones fija al final de un flujo multi-paso
+## A7 · Barra de acciones fija al final de un flujo multi-paso
 - **Se aplica en silencio:** en una vista de flujo multi-paso, las acciones de navegación del
   paso (cancelar, continuar, guardar, enviar) van en una barra al final de la página, visualmente
-  distinguida del contenido, ordenadas según C20 (menor a mayor compromiso, izquierda a derecha):
+  distinguida del contenido, ordenadas según C16 (menor a mayor compromiso, izquierda a derecha):
   cancelar/salir del flujo a la izquierda; la o las acciones de avance (continuar, guardar y enviar,
   enviar a un estado intermedio) a la derecha.
 - **Variable:** cuáles acciones concretas existen en cada paso y su texto.

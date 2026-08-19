@@ -29,7 +29,7 @@ y "Tono al hacer preguntas" en `SKILL.md`), es cubrir un vacío que sigue abiert
 - Esto **no** contradice M1: las partes del formulario ya resueltas por convención (C1 — contenido
   en card; C2 — posición del botón de envío) se siguen aplicando en silencio. R7 solo vuelve
   obligatoria la pregunta sobre el **arreglo interno de los campos entre sí**, que ninguna
-  convención C1-C20 resuelve.
+  convención C1-C16 resuelve.
 - Igual que en el resto de la skill, no se requiere precisión de píxeles: alcanza con que el orden
   relativo y el agrupamiento de los inputs queden inequívocos.
 
@@ -67,8 +67,8 @@ aparezca ese dato: columna de tabla, input, bloque de pares etiqueta-valor, text
   aplica.
 - Las opciones se listan como (a)/(b)/(c) con una recomendación, más una opción abierta para "alguna
   difiere" (ver "Tono al hacer preguntas" en `SKILL.md`).
-- **No aplica a montos:** el formato de los importes de dinero ya está resuelto por C13 y se aplica
-  en silencio (M1) — ahí solo la moneda sigue siendo variable, según C13.
+- **No aplica a montos:** el formato de los importes de dinero ya está resuelto por C12 y se aplica
+  en silencio (M1) — ahí solo la moneda sigue siendo variable, según C12.
 - El formato se registra en el detalle del elemento donde aparece el dato (bloque 4) y rige la
   generación de los datos mock (bloque 7), que deben respetarlo.
 - **Relación con R8:** son independientes y pueden dispararse sobre la misma columna — R8 resuelve

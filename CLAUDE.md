@@ -56,7 +56,7 @@ verdad — se regeneran corriendo la skill, no se editan a mano.
   detallado va a `references/`, no a engordar el `SKILL.md`.
 - **IDs estables como vocabulario compartido entre skills**: varias skills se citan por ID en vez de
   repetir el texto de la regla.
-  - `C1-C20` (convenciones de layout/estilo), `A1-A10` (anatomía de página), `V-<COMPONENTE>#`
+  - `C1-C16` (convenciones de layout/estilo), `A1-A7` (anatomía de página), `V-<COMPONENTE>#`
     (catálogo de variantes) y `M1-M4` (meta-reglas de uso del catálogo) viven en
     `bcp-design-system/references/`.
   - `R6-R10` (reglas de proceso propias de esa skill) viven en

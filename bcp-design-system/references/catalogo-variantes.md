@@ -22,15 +22,15 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
 
 ## Botón
 
-### V-BOTON2 · Énfasis: principal para la acción de mayor compromiso, secundario para la que convive con ella, menor énfasis para volver/cancelar
+### V-BOTON1 · Énfasis: principal para la acción de mayor compromiso, secundario para la que convive con ella, menor énfasis para volver/cancelar
 - **Se aplica en silencio:** todo botón interactivo tiene uno de tres énfasis:
   - **Principal:** la acción de mayor compromiso de la vista o del paso (enviar, guardar y enviar,
     buscar, continuar).
   - **Secundario:** una acción que convive con la principal (p. ej. "Enviar a Pendiente de envío"
     junto a "Guardar y enviar"; "Descargar" junto a una acción principal; "Actualizar estados").
-  - **Menor énfasis:** la acción de menor compromiso — volver (C12) o limpiar/reset de un formulario
+  - **Menor énfasis:** la acción de menor compromiso — volver (C11) o limpiar/reset de un formulario
     de búsqueda, que va inmediatamente a la izquierda del botón de búsqueda cuando el formulario lo
-    incluye (C20).
+    incluye (C16).
 - **Variable:** cuál acción concreta de la vista es la principal y cuáles son secundarias, si no es
   evidente por el contexto.
 
@@ -43,12 +43,12 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
 
 ## Tabla
 
-### V-TABLA2 · Columna de estado: se representa con la variante de badge (ver Badge/Estado)
+### V-TABLA1 · Columna de estado: se representa con la variante de badge (ver Badge/Estado)
 - **Se aplica en silencio:** cuando una columna representa un estado, se muestra con la variante de
   badge de estado (ver Badge/Estado más abajo), nunca con otra representación ad hoc.
-- **Variable:** el mapeo de color por valor de estado (V-BADGE2).
+- **Variable:** el mapeo de color por valor de estado (V-BADGE1).
 
-### V-TABLA3 · Acciones por fila: dentro de la columna de acciones de esa fila
+### V-TABLA2 · Acciones por fila: dentro de la columna de acciones de esa fila
 - **Se aplica en silencio:** una acción de fila (p. ej. "Continuar", "Ver errores") se ubica dentro
   de la columna de acciones de esa fila — no suelta en otra columna ni fuera de la tabla.
 - **Variable:** qué acciones concretas existen por fila y qué disparan.
@@ -59,8 +59,8 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
 - **Se aplica en silencio:** cuando varios bloques de datos pertenecen a la misma entidad/operación
   (p. ej. "Datos de la operación" + "Detalle de documentos" de un mismo resumen), no es obligatorio
   usar una card por bloque (aunque C1 lo permitiría): pueden agruparse dentro de **una sola card**,
-  cada bloque con su propio encabezado de sub-sección (C17) y separados entre sí por espacio visible
-  (C15).
+  cada bloque con su propio encabezado de sub-sección (C15) y separados entre sí por espacio visible
+  (C13).
 - **Variable:** cuáles bloques se agrupan juntos en una misma card — si no es evidente por
   pertenecer a la misma entidad/operación, se pregunta.
 
@@ -74,7 +74,7 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
 
 ## Badge / Estado
 
-### V-BADGE2 · Color por tipo de estado: no fijo, pero con mapeo semántico recomendado
+### V-BADGE1 · Color por tipo de estado: no fijo, pero con mapeo semántico recomendado
 - **Se aplica en silencio:** ninguno — el color de cada valor de estado se confirma para cada
   catálogo de estados concreto (no hay una asignación universal obligatoria).
 - **Variable:** el color de cada valor se pregunta, ofreciendo como recomendación por defecto el

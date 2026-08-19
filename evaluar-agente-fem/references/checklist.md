@@ -62,7 +62,7 @@ componente y esta skill no prescribe (M4).
 
 - [ ] El título de cada vista/sección usa el nivel de jerarquía correcto: principal de vista (C6),
       secundario/rótulo de card de formulario (C7), o de sub-sección dentro de una card de datos
-      (C17).
+      (C15).
 - [ ] Los buscadores y bloques de datos de solo lectura están contenidos en una card (C1).
 - [ ] El botón de búsqueda de un formulario está abajo, a la derecha (C2).
 - [ ] El contador de resultados de tabla está arriba de la tabla, a la izquierda, con el formato
@@ -71,11 +71,11 @@ componente y esta skill no prescribe (M4).
       los registros ya cargados (C5).
 - [ ] No hay colores de fondo usados como decoración en elementos genéricos de interfaz (C8).
 - [ ] Los montos siguen el formato `[símbolo] [número]` con coma de millares, punto decimal y
-      siempre dos decimales (C13), alineados a la derecha y en negrita en tabla (C10).
+      siempre dos decimales (C12), alineados a la derecha y en negrita en tabla (C9).
 - [ ] El énfasis de cada botón (principal/secundario/menor compromiso) corresponde a su rol en la
-      vista, según V-BOTON2.
+      vista, según V-BOTON1.
 - [ ] Una columna de estado se representa con la variante de badge, con el color mapeado según el
-      criterio semántico recomendado (V-BADGE2).
+      criterio semántico recomendado (V-BADGE1).
 
 ## 4. Calidad del código
 
