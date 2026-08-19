@@ -46,7 +46,10 @@ verdad — se regeneran corriendo la skill, no se editan a mano.
 - Frontmatter YAML: `name`, `description` (en español, con disparadores explícitos de *cuándo usar*
   y a menudo *cuándo NO usar*), y opcionalmente `user-invocable: true` / `disable-model-invocation:
   true` cuando la skill solo debe invocarse explícitamente (usado en `init-frontend-conventions`,
-  `bcp-design-system`, `spec-prototype`).
+  `spec-prototype`). `bcp-design-system` es la excepción deliberada: no lo declara porque también
+  debe poder auto-invocarse cuando la petición del usuario coincide con su `description` (el caso
+  diario de crear/revisar una vista de BCP), además de invocarse explícitamente o leerse como
+  archivo desde otra skill.
 - Cada `SKILL.md` es un **enrutador delgado**: la decisión de qué hacer y lo compartido entre casos;
   el detalle extenso vive en `references/*.md`, con la instrucción explícita de cargar el archivo
   completo antes de usarlo y **no resumirlo de memoria** — son la fuente única. Contenido nuevo

@@ -4,12 +4,13 @@ description: >
   Fuente única del sistema de diseño visual de las webs de BCP: las convenciones fijas de layout y
   estilo que se repiten en todos los módulos (C1-C20), la anatomía de página compartida, y el
   catálogo de variantes de cada componente con el criterio de cuándo usar cada una. Úsala siempre
-  que necesites saber cómo debe verse o comportarse visualmente una pantalla de BCP — para escribir
-  una especificación, revisar una implementación, o decidir qué variante de un componente
-  corresponde a un caso concreto. No la uses para generar código ni para decidir el stack técnico:
-  es vocabulario de diseño (card, énfasis principal/secundario, jerarquía de título), no
-  implementación — es agnóstica de librería, nunca nombra componente, prop ni token real.
-disable-model-invocation: true
+  que necesites saber cómo debe verse o comportarse visualmente una pantalla de BCP: al crear o
+  diseñar una vista o pantalla nueva para una web de BCP (el caso de uso diario de un frontend de
+  BCP), al escribir una especificación, al revisar una implementación existente, o al decidir qué
+  variante de un componente corresponde a un caso concreto. No la uses para generar código ni para
+  decidir el stack técnico: es vocabulario de diseño (card, énfasis principal/secundario, jerarquía
+  de título), no implementación — es agnóstica de librería, nunca nombra componente, prop ni token
+  real. Tampoco la uses para proyectos que no sean webs de BCP.
 ---
 
 # Sistema de diseño BCP
