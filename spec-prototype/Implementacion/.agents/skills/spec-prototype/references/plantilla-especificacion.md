@@ -38,7 +38,8 @@ No menciones tecnologías, frameworks ni librerías en ningún punto del documen
 - **Márgenes de vista:** [siempre presente, textual: "Todas las vistas tienen márgenes respecto a
   los bordes de la pantalla, y esos márgenes son los mismos en todas las vistas; el contenido
   nunca queda pegado a los bordes."]
-- **Anatomía de página:** [siempre presente, resumida a partir de `anatomia-pagina.md`: si la vista
+- **Anatomía de página:** [siempre presente, resumida a partir de
+  `bcp-design-system/references/anatomia-pagina.md`: si la vista
   tiene navegación de vuelta, el botón "Volver" precede al título en su propia fila; el título
   comparte fila con las acciones de nivel de vista, si existen; el contenido ocupa el 100% del
   ancho disponible. Añadir aquí, si aplica a alguna vista del prototipo, que sigue el patrón de

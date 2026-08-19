@@ -57,12 +57,9 @@ esa convención.
 - Si alguna columna contiene un dato con varios formatos posibles (fechas, horas, porcentajes,
   códigos), aplica (R9): se pregunta el formato una vez por tipo de dato. Los montos quedan fuera —
   su formato ya lo resuelve C13.
-- Alineación de cada columna: texto a la izquierda; números/cantidades a la derecha; **montos**
-  (importes de dinero) a la derecha y **en negrita** — todo resuelto por convención (C10); solo se
-  confirman las excepciones a ese default. El formato del valor de cualquier columna de montos
-  (símbolo de moneda, coma de millares, punto decimal, siempre dos decimales — p. ej.
-  `S/ 123,456.12`) está resuelto por convención (C13); no se pregunta, salvo la moneda si no es
-  evidente por el contexto.
+- Alineación de cada columna, incluida la de montos, y el formato del valor de cualquier columna de
+  montos: resueltos por convención (C10 y C13 respectivamente); no se pregunta, salvo las
+  excepciones a ese default y la moneda si no es evidente por el contexto.
 - ¿Reordenamiento de filas? Si sí, ¿cuáles columnas permiten ordenar y cuál es el orden por
   defecto (ascendente/descendente, y por qué columna)?
 - ¿Reordenamiento de columnas (drag para cambiar el orden de las columnas)? Si sí, ¿cuáles pueden
@@ -71,18 +68,15 @@ esa convención.
   totalidad de los registros y pagina por front sobre ese conjunto completo (R10) — no se pregunta
   ese mecanismo. Solo se pregunta las opciones para cambiar la cantidad de filas por página y cuál
   es el valor por defecto.
-- ¿Contador de resultados? Posición (**arriba de la tabla**, izquierda), formato del texto y
-  comportamiento numérico por página resueltos por convención (C3): `[índice inicial]-[índice
-  final] de [total de registros] [Entidad(s)]`, con `de [total de registros] [Entidad(s)]` en
-  negrita; el rango se recalcula en cada página según su tamaño y el total no cambia al paginar (ver
-  C3 para la fórmula y el ejemplo). Solo se pregunta el nombre de la entidad (singular/plural) si no
+- ¿Contador de resultados? Posición, formato del texto y comportamiento numérico por página
+  resueltos por convención (C3). Solo se pregunta el nombre de la entidad (singular/plural) si no
   es evidente por el contexto.
 - ¿Acciones a nivel de tabla completa (no de fila, p. ej. un botón de descarga)? Posición resuelta
   por convención (C4): **arriba de la tabla**, extremo opuesto al contador, misma fila. Solo se
   pregunta cuáles acciones existen y qué disparan.
 - ¿Alguna columna representa un estado? Se representa con la variante de badge (V-TABLA2); el color
-  por valor no es fijo, pero se pregunta ofreciendo el mapeo semántico recomendado (V-BADGE2) —
-  verde éxito, amarillo en proceso, rojo error, azul neutro/cerrado.
+  por valor se captura como en cualquier badge (ver "Etiqueta / distintivo de estado" más abajo,
+  V-BADGE2).
 - ¿Algún otro valor de columna tiene un estilo condicional distinto a un estado? (p. ej. un monto
   negativo resaltado). ¿Cuál es la regla y cuál el estilo?
 - ¿Hay acciones por fila (dentro de la columna de acciones de esa fila, resuelto por convención —
@@ -107,10 +101,10 @@ esa convención.
   correspondiente. No se pregunta cómo se presenta visualmente el error — lo resuelve el propio
   componente.
 - Formato o máscara especial (fecha, moneda, teléfono, etc.), si aplica. Para moneda, el formato del
-  valor (símbolo, coma de millares, punto decimal, siempre dos decimales) está resuelto por
-  convención (C13); no se pregunta, salvo la moneda concreta si no es evidente por el contexto. Para
-  cualquier otro dato con varios formatos posibles (fecha, hora, etc.), aplica (R9) — se pregunta el
-  formato, una sola vez por tipo de dato a nivel de todo el prototipo.
+  valor está resuelto por convención (C13); no se pregunta, salvo la moneda concreta si no es
+  evidente por el contexto. Para cualquier otro dato con varios formatos posibles (fecha, hora,
+  etc.), aplica (R9) — se pregunta el formato, una sola vez por tipo de dato a nivel de todo el
+  prototipo.
 
 ## Checkbox / radio button / interruptor (toggle)
 - Opciones disponibles (para radio/toggle con más de dos estados).
@@ -207,7 +201,6 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 ## Etiqueta / distintivo de estado (badge)
 - Valores posibles y su texto.
 - Color asociado a cada valor: no es fijo, pero se pregunta ofreciendo como recomendación el mapeo
-  semántico de convención (V-BADGE2) — verde éxito, amarillo en proceso, rojo error, azul
-  neutro/cerrado.
+  semántico de convención (V-BADGE2).
 - ¿Alguno de los valores necesita una aclaración secundaria adicional (p. ej. "Rechazada" + "Por
   usuario")? Se pregunta si aplica y su texto.

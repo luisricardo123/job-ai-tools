@@ -49,11 +49,10 @@ que reciba la especificación.
 
 ## Sistema de diseño BCP y reglas de proceso
 
-El sistema de diseño de BCP se repite igual en todos los módulos (p. ej. los buscadores siempre van
-en card, el contador de tabla siempre va arriba a la izquierda con un formato fijo, la paginación
-siempre va centrada, los montos siempre llevan el mismo formato, la anatomía de página y la
-jerarquía de título son las mismas en toda vista). Por eso esas convenciones **no se preguntan**: se
-aplican en silencio y se registran en el documento. La fuente completa de ese sistema de diseño vive
+El sistema de diseño de BCP se repite igual en todos los módulos: layout, agrupación, jerarquía de
+título y anatomía de página son las mismas de una vista a otra (ver el catálogo C1-C20/A1-A10 de
+`bcp-design-system` para el detalle puntual de cada convención). Por eso esas convenciones **no se
+preguntan**: se aplican en silencio y se registran en el documento. La fuente completa de ese sistema de diseño vive
 en la skill `bcp-design-system` (ver "Principio central" arriba) — **cárgala antes de preguntar o de
 escribir el documento final**, no la resumas de memoria:
 `bcp-design-system/references/convenciones-bcp.md` (C1-C20),
@@ -157,8 +156,9 @@ quedar en una o dos frases claras, no en generalidades vagas.
   contadores, tabs, mensajes, etc.).
 - **Layout:** en qué orden o posiciones visuales están esos elementos entre sí (arriba/abajo,
   izquierda/derecha, agrupados en secciones, etc.). Buena parte del layout ya está resuelto por las
-  convenciones de `bcp-design-system` (`convenciones-bcp.md` C1-C20 para el layout dentro de una
-  vista, `anatomia-pagina.md` A1-A10 para la estructura de la página como contenedor): aplícalas en
+  convenciones de `bcp-design-system` (`bcp-design-system/references/convenciones-bcp.md` C1-C20
+  para el layout dentro de una vista, `bcp-design-system/references/anatomia-pagina.md` A1-A10 para
+  la estructura de la página como contenedor): aplícalas en
   silencio (M1) y no las preguntes. Pregunta (fallback M2) solo la
   posición que **no** quede resuelta por una convención ni por una convención universal evidente.
   No se requiere precisión de píxeles: se requiere que el orden relativo y el agrupamiento queden
@@ -171,8 +171,9 @@ quedar en una o dos frases claras, no en generalidades vagas.
 Para cada elemento identificado en el bloque 3, captura sus detalles específicos usando
 `references/catalogo-elementos.md` como checklist según el tipo de elemento (botón, tabla,
 selector, campo de texto, contador, paginación, tabs, esqueleto, etc.). **Carga ese archivo,
-las references de `bcp-design-system` (`convenciones-bcp.md`, `anatomia-pagina.md`,
-`catalogo-variantes.md`) y `references/reglas-obligatorias.md` antes de
+las references de `bcp-design-system` (`bcp-design-system/references/convenciones-bcp.md`,
+`bcp-design-system/references/anatomia-pagina.md`,
+`bcp-design-system/references/catalogo-variantes.md`) y `references/reglas-obligatorias.md` antes de
 preguntar por los detalles** — son la fuente de verdad de qué preguntar por cada tipo, de las
 convenciones fijas C1-C20/A#/V-# y de las reglas de proceso M1-M4/R6/R7/R8/R9/R10; no las resumas de
 memoria. El layout y la agrupación ya cubiertos por una convención **no se preguntan** (M1): solo se
@@ -220,8 +221,9 @@ Como la prueba de concepto debe ser funcional para los usuarios, se necesitan da
 2. **Absorber primero.** Leer todo lo que el usuario ya describió (mensaje actual o conversación
    previa) y mapearlo a los bloques 1-7.
 3. **Aplicar convenciones BCP.** Para cada elemento identificado, mapearlo contra
-   `bcp-design-system` (`convenciones-bcp.md` C1-C20, `anatomia-pagina.md` A1-A10,
-   `catalogo-variantes.md` V-#): toda convención que lo cubra se marca como resuelta
+   `bcp-design-system` (`bcp-design-system/references/convenciones-bcp.md` C1-C20,
+   `bcp-design-system/references/anatomia-pagina.md` A1-A10,
+   `bcp-design-system/references/catalogo-variantes.md` V-#): toda convención que lo cubra se marca como resuelta
    (M1) y se aplica en silencio — no se pregunta, se registra directamente para el documento final.
    Si lo que describió el usuario contradice una convención, queda marcado como desviación (M3), no
    como vacío.
