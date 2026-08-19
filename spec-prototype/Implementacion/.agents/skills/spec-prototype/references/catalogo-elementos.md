@@ -134,7 +134,7 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
   estos tres puntos se pregunta.
 - Qué datos muestra y en qué orden.
 
-## Contador de resultados (como elemento independiente, fuera de una tabla)
+## Contador de resultados
 - Posición (izquierda), formato y comportamiento numérico por página resueltos por convención (C3),
   igual que el contador de tabla. Solo se pregunta el nombre de la entidad si no es evidente por el
   contexto.
