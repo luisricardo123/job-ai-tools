@@ -1,6 +1,12 @@
 ---
 name: spec
-description: Diseña y desarrolla especificaciones siguiendo el método spec-driven. Hace preguntas aclaratorias antes de proponer la estructura y construye la especificación sección por sección. Úsalo al iniciar una funcionalidad grande, antes de escribir código.
+description: >
+  Diseña especificaciones siguiendo el método spec-driven: hace preguntas aclaratorias en cuatro
+  fases antes de proponer la estructura, construye el documento sección por sección y lo guarda en
+  `specs/`. Es genérica —sirve para cualquier proyecto y cualquier stack— y no escribe código.
+  Úsala al iniciar una funcionalidad grande, antes de escribir código. No la uses para tareas
+  pequeñas ya bien definidas, ni para implementar algo que ya está especificado.
+user-invocable: true
 disable-model-invocation: true
 argument-hint: 'descripción corta de la funcionalidad o requerimiento'
 ---

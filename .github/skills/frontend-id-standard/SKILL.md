@@ -1,21 +1,16 @@
 ---
 name: frontend-id-standard
 description: >
-  Analiza componentes frontend (HTML y su TypeScript asociado, en proyectos Angular con
-  componentes BCP, HTML nativo y componentes propios) y agrega atributos `data-id` estables a los
-  elementos relevantes para la automatización de pruebas, siguiendo estrictamente el estándar
-  `<nombre_componente>_<tipo_control>_<nombre_control>`. Úsala cuando el usuario pida "agregar IDs
-  para pruebas", "aplicar el estándar de IDs de automatización", "analizar IDs de automatización",
-  "poner IDs a este formulario/tabla/modal/componente", "revisar IDs existentes", "corregir IDs",
-  o invoque /frontend-id-standard. Soporta modo análisis (detecta y propone sin modificar
-  archivos) y modo aplicación (agrega IDs solo a elementos claramente clasificables). En modo
-  aplicación corrige automáticamente los IDs existentes que no cumplen el lineamiento (formato,
-  catálogo, duplicados) y propone como mejoras opcionales los IDs que sí cumplen pero podrían ser
-  más precisos, para que el usuario decida cuáles aceptar. Agrupa al final los casos dudosos
-  (relevancia o tipo de control no claros) y las mejoras sugeridas y, en modo aplicación, se
-  detiene ahí con una pregunta al usuario (AskUserQuestion) antes de dar el trabajo por
-  terminado — no cierra, no continúa con otro archivo ni asume una respuesta por defecto hasta
-  tener la del usuario.
+  Agrega y corrige atributos `data-id` estables para automatización de pruebas en componentes
+  frontend (HTML nativo, componentes propios y componentes BCP, junto con su TypeScript asociado),
+  siguiendo estrictamente el estándar `<nombre_componente>_<tipo_control>_<nombre_control>`. Úsala
+  cuando el usuario pida "agregar IDs para pruebas", "aplicar el estándar de IDs de automatización",
+  "analizar IDs de automatización", "poner IDs a este formulario/tabla/modal/componente", "revisar
+  IDs existentes", "corregir IDs", o invoque /frontend-id-standard. Tiene modo análisis (detecta y
+  propone sin modificar archivos) y modo aplicación (edita el archivo). No la uses para crear el
+  componente en sí, ni para el atributo `id` de HTML ni para atributos de accesibilidad (`for`,
+  `aria-*`): solo cubre `data-id`.
+argument-hint: 'ruta de los componentes o carpetas a analizar (opcional)'
 ---
 
 # Frontend ID Standard

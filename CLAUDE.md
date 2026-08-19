@@ -36,11 +36,18 @@ el script desactualizado.
 
 ## Convenciones de autoría de skills
 
-- Frontmatter YAML: `name`, `description` (en español, con disparadores explícitos de *cuándo usar*
-  y a menudo *cuándo NO usar*), y opcionalmente `user-invocable: true` / `disable-model-invocation:
-  true` cuando la skill solo debe invocarse explícitamente (`init-frontend-conventions` declara
-  ambas; `spec-prototype` y `spec` solo `disable-model-invocation: true`). `bcp-design-system` es
-  la excepción deliberada: no declara ninguna de las dos porque también debe poder auto-invocarse
+- Frontmatter YAML: `name` (sin comillas, igual al nombre de la carpeta) y `description: >`
+  (bloque folded, ~100 columnas), en español, siempre en este orden: qué hace/produce (1-2 frases,
+  imperativo dirigido al agente) → disparadores explícitos de *cuándo usar* (frases textuales del
+  usuario, nombres de archivo/librería, comando slash) → *cuándo NO usar* (al menos una exclusión
+  real). La `description` es puro enrutamiento: no lleva pasos, nombres de herramienta
+  (`AskUserQuestion`) ni reglas de parada — eso vive en el cuerpo del `SKILL.md`.
+  `user-invocable: true` / `disable-model-invocation: true` se declaran **juntas y explícitas**
+  cuando la skill solo debe invocarse explícitamente (`init-frontend-conventions`, `spec-prototype`
+  y `spec` las declaran las tres); se omiten ambas en las auto-invocables, donde el default ya es
+  el comportamiento deseado. `argument-hint` solo si la skill recibe un argumento real (`spec`,
+  `spec-prototype`, `frontend-id-standard`). `bcp-design-system` es la excepción deliberada: no
+  declara `user-invocable`/`disable-model-invocation` porque también debe poder auto-invocarse
   cuando la petición del usuario coincide con su `description` (el caso diario de crear/revisar una
   vista de BCP), además de invocarse explícitamente o leerse como archivo desde otra skill.
 - Cada `SKILL.md` es un **enrutador delgado**: la decisión de qué hacer y lo compartido entre casos;

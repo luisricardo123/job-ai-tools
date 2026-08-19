@@ -1,7 +1,15 @@
 ---
 name: angular-best-practices
 description: >
-  Aplica las convenciones correctas de Angular 16 (NgModules, decoradores @Input()/@Output(), RxJS, *ngIf/*ngFor) o Angular 20 (standalone, signals, input()/output()/model(), nuevo control flow @if/@for) según la versión del proyecto. Úsala SIEMPRE que el usuario pida crear, generar, escribir, editar o revisar código Angular —componentes, servicios, directivas, pipes, guards, formularios, rutas o tests— sin importar cuán simple o rutinaria parezca la petición (ej. "hazme un componente de login", "créame un servicio para la API", "agrega un guard"), incluso si no menciona "Angular", la versión ni "buenas prácticas". Es indispensable porque es esencial para el buen funcionamiento del código: sin verificar cuál aplica antes de escribir código, se mezcla sintaxis vieja y nueva, y el resultado no compila o queda obsoleto en review.
+  Aplica las convenciones correctas de Angular según la versión del proyecto: Angular 16 (NgModules,
+  @Input()/@Output(), RxJS, *ngIf/*ngFor) o Angular 20 (standalone, signals,
+  input()/output()/model(), control flow @if/@for). Úsala SIEMPRE que el usuario pida crear,
+  generar, escribir, editar o revisar código Angular —componentes, servicios, directivas, pipes,
+  guards, formularios, rutas o tests— por rutinaria que parezca la petición ("hazme un componente de
+  login", "créame un servicio para la API", "agrega un guard"), y aunque no mencione "Angular", la
+  versión ni "buenas prácticas": sin determinar la versión antes de escribir se mezcla sintaxis
+  vieja y nueva, y el código no compila o queda obsoleto en review. No la uses para otros stacks
+  (React, Vue, AngularJS) ni para decidir cómo debe verse una pantalla.
 ---
 
 # Buenas prácticas de Angular

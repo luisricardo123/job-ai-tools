@@ -2,11 +2,16 @@
 name: spec-prototype
 description: >
   Recopila y organiza toda la información necesaria sobre una funcionalidad (objetivo, vistas,
-  elementos, layout, detalles de cada elemento, interacciones y comportamientos) y produce una
-  especificación de prototipo escrita en `.prototype-specs/`, lista para entregarse a un agente
-  que genere el código de una prueba de concepto funcional (alternativa rápida para que
-  usuarios interactúen con el prototipo).
+  elementos, layout, detalle de cada elemento, interacciones y comportamientos) y produce una
+  especificación de prototipo en `.prototype-specs/`, lista para entregarse a un agente que genere
+  el código de una prueba de concepto funcional con la que los usuarios puedan interactuar. Es para
+  módulos de las webs de BCP: aplica el sistema de diseño del banco, pero es agnóstica de stack —no
+  menciona Angular, HTML ni nombres de librería— y no escribe código. Úsala cuando el usuario pida
+  un prototipo, una prueba de concepto o una maqueta funcional de una pantalla. No la uses para
+  implementar el prototipo ni para especificar lógica de negocio de producción.
+user-invocable: true
 disable-model-invocation: true
+argument-hint: 'funcionalidad o pantalla a prototipar'
 ---
 
 # Especificación de prototipo

@@ -1,13 +1,13 @@
 ---
 name: process-openapi
 description: >
-  Úsala cuando el usuario tenga un spec OpenAPI o Swagger (openapi.yaml, swagger.json, v2 o v3)
-  y necesite convertirlo en un contrato de API consultable: índice de endpoints, detalle por
-  dominio y tipos TypeScript, con `$ref` resueltos y `allOf` aplanados, en
-  `.api-contracts/<nombre-api>/`. Aplica aunque no use la palabra "contrato" — pedir preparar un
-  swagger para conectar el front, documentar los endpoints de una API, o extraer los tipos de una
-  spec. No la uses para escribir servicios, clientes HTTP ni código de conexión: solo produce el
-  artefacto del contrato; implementar la conexión es una tarea posterior que se apoya en él.
+  Convierte un spec OpenAPI o Swagger (openapi.yaml, swagger.json, v2 o v3) en un contrato de API
+  consultable en `.api-contracts/<nombre-api>/`: índice de endpoints, detalle por dominio y tipos
+  TypeScript, con `$ref` resueltos y `allOf` aplanados. Úsala aunque el usuario no diga "contrato":
+  preparar un swagger para conectar el front, documentar los endpoints de una API, o extraer los
+  tipos de una spec. No la uses para escribir servicios, clientes HTTP ni código de conexión —solo
+  produce el artefacto del contrato; implementar la conexión es una tarea posterior que se apoya en
+  él—, ni para formatos que no sean OpenAPI/Swagger (GraphQL, colecciones de Postman, WSDL).
 ---
 
 # Contrato de API desde OpenAPI

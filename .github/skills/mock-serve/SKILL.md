@@ -1,6 +1,14 @@
 ---
-name: "mock-serve"
-description: "Usar cuando el usuario quiera instalar, configurar, crear o editar mocks de API REST con la librería interna @bcp/mock-serve (CLI bcp-serve) del BCP Framework Web, que levanta un servidor HTTP local en base a archivos JSON dentro de una carpeta mock-db/. Disparar con menciones de \"mock server\", \"mockserve\", \"bcp-serve\", \"mock-db\", \"levantar un servidor de mocks\", o al pedir crear/editar JSONs de mocks en esa carpeta. NO usar si el usuario solo quiere hardcodear datos de prueba directamente en un servicio de Angular (arrays fijos, of(...).pipe(delay(...)), sin servidor HTTP real) — eso no usa esta librería. Si el pedido es ambiguo (p.ej. \"quiero mockear esta data\" sin más contexto), preguntar cuál de los dos enfoques prefiere antes de actuar."
+name: mock-serve
+description: >
+  Instala, configura, crea o edita mocks de API REST con la librería interna @bcp/mock-serve (CLI
+  `bcp-serve`) del BCP Framework Web, que levanta un servidor HTTP local a partir de archivos JSON
+  dentro de una carpeta `mock-db/`. Úsala ante menciones de "mock server", "mockserve", "bcp-serve",
+  "mock-db", "levantar un servidor de mocks", o al pedir crear/editar los JSON de esa carpeta. No la
+  uses si el usuario solo quiere hardcodear datos de prueba dentro de un servicio de Angular
+  (arrays fijos, of(...).pipe(delay(...)), sin servidor HTTP real): eso no pasa por esta librería.
+  Si el pedido es ambiguo (p. ej. "quiero mockear esta data" sin más contexto), pregunta cuál de los
+  dos enfoques prefiere antes de actuar.
 ---
 
 # bcp-mock-serve

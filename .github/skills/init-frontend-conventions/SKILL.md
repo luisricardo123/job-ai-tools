@@ -1,6 +1,12 @@
 ---
 name: init-frontend-conventions
-description: Genera el archivo AGENTS.md de convenciones para un micro-frontend Angular nuevo del BCP, combinando una plantilla base con el perfil de arquitectura Hexagonal (con capa anticorrupción), fijo para todos los proyectos, más una breve entrevista. Úsala una sola vez, justo después del scaffolding con FEM y antes de pedir la primera generación de código en el repo.
+description: >
+  Genera el archivo AGENTS.md de convenciones para un micro-frontend Angular nuevo del BCP,
+  combinando una plantilla base con el perfil de arquitectura Hexagonal (con capa anticorrupción),
+  fijo para todos los proyectos, más una breve entrevista. Úsala una sola vez, justo después del
+  scaffolding con FEM y antes de pedir la primera generación de código en el repo. No la uses para
+  actualizar un AGENTS.md que ya existe —edítalo directamente— ni en proyectos que no sean
+  micro-frontends del BCP Framework Web.
 user-invocable: true
 disable-model-invocation: true
 ---

@@ -1,16 +1,15 @@
 ---
 name: bcp-design-system
 description: >
-  Fuente única del sistema de diseño visual de las webs de BCP: las convenciones fijas de layout y
-  estilo que se repiten en todos los módulos (C1-C16), la anatomía de página compartida, y el
-  catálogo de variantes de cada componente con el criterio de cuándo usar cada una. Úsala siempre
-  que necesites saber cómo debe verse o comportarse visualmente una pantalla de BCP: al crear o
-  diseñar una vista o pantalla nueva para una web de BCP (el caso de uso diario de un frontend de
-  BCP), al escribir una especificación, al revisar una implementación existente, o al decidir qué
-  variante de un componente corresponde a un caso concreto. No la uses para generar código ni para
-  decidir el stack técnico: es vocabulario de diseño (card, énfasis principal/secundario, jerarquía
-  de título), no implementación — es agnóstica de librería, nunca nombra componente, prop ni token
-  real. Tampoco la uses para proyectos que no sean webs de BCP.
+  Fuente única del lenguaje visual de las webs de BCP: convenciones fijas de layout y estilo
+  (C1-C16), anatomía de página (A1-A7) y catálogo de variantes de cada componente con el criterio de
+  cuándo usar cada una. Úsala siempre que necesites saber cómo debe verse o comportarse visualmente
+  una pantalla de BCP: al crear o diseñar una vista nueva (el caso diario de un frontend de BCP), al
+  escribir una especificación, al revisar una pantalla ya implementada, o al elegir qué variante de
+  un componente corresponde a un caso concreto. Es vocabulario de diseño agnóstico de librería
+  (card, énfasis principal/secundario, jerarquía de título): nunca nombra componente, prop, evento
+  ni token real. No la uses para generar código, para decidir el stack técnico, ni en proyectos que
+  no sean webs de BCP.
 ---
 
 # Sistema de diseño BCP
