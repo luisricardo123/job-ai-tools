@@ -13,9 +13,10 @@ propio sistema de diseño (color de borde, forma, animación) — ver M4.
 
 Las convenciones fijas del sistema de diseño BCP viven en la skill `bcp-design-system`: cards,
 contador, posición del botón de búsqueda, paginación, niveles de título, roles de color, alineación
-de columnas, formato de montos (`convenciones-bcp.md`, C1-C20); estructura de página y anatomía de
-vista (`anatomia-pagina.md`, A1-A10); y variantes de componente con su criterio de elección — énfasis
-de botón, mensajería, badges, etc. (`catalogo-variantes.md`, V-#). Las
+de columnas, formato de montos (`bcp-design-system/references/convenciones-bcp.md`, C1-C20);
+estructura de página y anatomía de vista (`bcp-design-system/references/anatomia-pagina.md`,
+A1-A10); y variantes de componente con su criterio de elección — énfasis de botón, mensajería,
+badges, etc. (`bcp-design-system/references/catalogo-variantes.md`, V-#). Las
 reglas de proceso que gobiernan cómo se usan (aplicar en silencio, fallback, desviaciones,
 componentes con mecánica visual fija) son M1-M4, en el `SKILL.md` de `bcp-design-system`; las propias
 de esta skill (columnas largas, layout de inputs de formulario, columnas de significado ambiguo,

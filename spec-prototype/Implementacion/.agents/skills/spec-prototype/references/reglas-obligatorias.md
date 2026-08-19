@@ -8,7 +8,8 @@ Las meta-reglas que gobiernan **cómo se usa** el sistema de diseño BCP (aplica
 fallback, desviaciones, componentes con mecánica visual fija) son M1-M4 y viven en la skill
 `bcp-design-system` (`SKILL.md` de esa skill) — no aquí. El catálogo de convenciones fijas en sí
 (qué se aplica en silencio y qué queda variable) vive en las references de esa misma skill
-(`convenciones-bcp.md`, `anatomia-pagina.md`, `catalogo-variantes.md`).
+(`bcp-design-system/references/convenciones-bcp.md`, `bcp-design-system/references/anatomia-pagina.md`,
+`bcp-design-system/references/catalogo-variantes.md`).
 
 ## R6 · Nombres de columna de tabla demasiado largos
 Al capturar los nombres de las cabeceras de una tabla, si algún nombre supera los **16 caracteres**:

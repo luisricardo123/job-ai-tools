@@ -24,8 +24,8 @@ pasa cuando el usuario interactúa, y con qué datos).
 
 Esta skill produce especificaciones para módulos de las **webs de BCP**, que comparten un sistema
 de diseño con estructuras, agrupaciones y layout ya definidos — fuente única en la skill
-`bcp-design-system`, que es agnóstica de tecnología: `references/convenciones-bcp.md`,
-`references/anatomia-pagina.md` y `references/catalogo-variantes.md`. Por eso el spec **sí aplica
+`bcp-design-system`, que es agnóstica de tecnología: `bcp-design-system/references/convenciones-bcp.md`,
+`bcp-design-system/references/anatomia-pagina.md` y `bcp-design-system/references/catalogo-variantes.md`. Por eso el spec **sí aplica
 ese sistema de diseño** — vocabulario de diseño como card, énfasis principal/secundario, jerarquía
 de título, centrado — pero **sigue sin mencionar el stack técnico de implementación** (nada de
 Angular, React, HTML, nombres de librerías o componentes específicos, etc.) ni en las preguntas que
@@ -55,8 +55,10 @@ siempre va centrada, los montos siempre llevan el mismo formato, la anatomía de
 jerarquía de título son las mismas en toda vista). Por eso esas convenciones **no se preguntan**: se
 aplican en silencio y se registran en el documento. La fuente completa de ese sistema de diseño vive
 en la skill `bcp-design-system` (ver "Principio central" arriba) — **cárgala antes de preguntar o de
-escribir el documento final**, no la resumas de memoria: `convenciones-bcp.md` (C1-C20),
-`anatomia-pagina.md` (A1...) y `catalogo-variantes.md` (V-...).
+escribir el documento final**, no la resumas de memoria:
+`bcp-design-system/references/convenciones-bcp.md` (C1-C20),
+`bcp-design-system/references/anatomia-pagina.md` (A1...) y
+`bcp-design-system/references/catalogo-variantes.md` (V-...).
 
 Las meta-reglas que gobiernan *cómo* se usan esas convenciones (cuándo aplicar en silencio, cuándo
 preguntar por un vacío del catálogo, cómo registrar una desviación, cuándo un componente ya trae su
@@ -93,11 +95,22 @@ preguntar o escribir.
   invalidado: hay que absorber lo nuevo, preguntar lo que quede ambiguo, y volver a resumir y
   confirmar — tantas veces como haga falta — antes de escribir el archivo.
 
+## Prerrequisito: `bcp-design-system` debe estar instalada
+
+Antes de cualquier otra cosa (incluso antes del "Punto de partida"), intenta abrir
+`bcp-design-system/SKILL.md` — skill hermana que debe estar instalada junto a esta en el mismo
+proyecto, nunca una copia embebida. Si no existe o no se puede leer, **detente de inmediato y
+avísalo explícitamente al usuario**: sin esa skill no hay fuente de convenciones C1-C20, A1-A10 ni
+V-# que aplicar, y esta skill no debe continuar parafraseando esas convenciones de memoria ni
+inventando un equivalente. No sigas con el "Punto de partida" ni con el "Procedimiento" hasta que
+la skill esté disponible.
+
 ## Punto de partida
 
-Antes de todo lo demás: si `$ARGUMENTS` viene vacío y no hay ninguna descripción de la
-funcionalidad en la conversación previa, no asumas nada — pide al usuario una descripción
-inicial de qué quiere prototipar y espera su respuesta antes de aplicar el "Procedimiento".
+Antes de todo lo demás (ya resuelto el prerrequisito anterior): si `$ARGUMENTS` viene vacío y no
+hay ninguna descripción de la funcionalidad en la conversación previa, no asumas nada — pide al
+usuario una descripción inicial de qué quiere prototipar y espera su respuesta antes de aplicar el
+"Procedimiento".
 
 ## Tono al hacer preguntas
 
@@ -202,7 +215,8 @@ Como la prueba de concepto debe ser funcional para los usuarios, se necesitan da
 ## Procedimiento
 
 ### Fase A — Recolección
-1. Resolver el "Punto de partida" antes de seguir.
+1. Verificar el "Prerrequisito: `bcp-design-system` debe estar instalada" y resolver el "Punto de
+   partida" antes de seguir.
 2. **Absorber primero.** Leer todo lo que el usuario ya describió (mensaje actual o conversación
    previa) y mapearlo a los bloques 1-7.
 3. **Aplicar convenciones BCP.** Para cada elemento identificado, mapearlo contra
