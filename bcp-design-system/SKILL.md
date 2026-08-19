@@ -31,7 +31,7 @@ sistema de diseño instalado en el proyecto; esta skill no la documenta ni siqui
 |---|---|
 | `references/convenciones-bcp.md` (C1-C20) | Necesites las reglas fijas puntuales de layout/estilo ya resueltas: cards, posición de botón de búsqueda, contador, paginación, niveles de título, roles de color, alineación de columnas, formato de montos, orden de acciones. |
 | `references/anatomia-pagina.md` (A1...) | Necesites la estructura de la página como contenedor: qué regiones existen de arriba abajo y en qué orden, más allá del contenido de una vista puntual. |
-| `references/catalogo-variantes.md` (V-...) | Necesites decidir qué variante de un componente corresponde a un caso concreto (qué botón, qué tipo de mensaje, qué tamaño de modal). |
+| `references/catalogo-variantes.md` (V-...) | Necesites decidir qué variante de un componente corresponde a un caso concreto (qué botón, qué tipo de mensaje, qué variante de card). |
 
 Carga siempre el archivo completo antes de responder o de escribir un documento que dependa de él —
 no resumas estas convenciones de memoria; son la fuente única y están pensadas para crecer.
@@ -67,8 +67,8 @@ skill documenta **que existe**, **cuándo se usa** (posición en la página, con
 y **qué estados o estructura funcional expone** (p. ej. paso completado/actual/pendiente) — pero no
 prescribe su mecánica visual interna como si hubiera que construirla desde cero: esa mecánica ya la
 resuelve el propio componente del sistema de diseño. La distinción real que esta skill sí debe fijar
-o preguntar es la de **variante** cuando el componente ofrece más de una (p. ej. qué tamaño de
-modal, qué énfasis de botón) — ahí sí hay una elección de diseño, no una mecánica interna dada.
+o preguntar es la de **variante** cuando el componente ofrece más de una (p. ej. qué énfasis de
+botón, qué variante de card) — ahí sí hay una elección de diseño, no una mecánica interna dada.
 
 **Esta es la regla rectora de todo el catálogo:** ante la duda de si algo va en esta skill, la
 pregunta no es "¿es visual?" sino "¿lo resuelve el componente por sí solo, o es una decisión de

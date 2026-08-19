@@ -1,7 +1,7 @@
 # Catálogo de variantes de componente BCP
 
 Fuente única de las **variantes de cada componente y el criterio de cuándo usar cada una** en las
-webs de BCP. Un modelo puede ya saber que existe "un botón" o "un modal"; lo que falta y resuelve
+webs de BCP. Un modelo puede ya saber que existe "un botón" o "una card"; lo que falta y resuelve
 este archivo es el criterio de elección: cuándo ese botón es de énfasis principal, secundario o de
 menor compromiso; cuándo un mensaje va inline o flotante; cuándo una card reemplaza a un grupo de
 radios.
@@ -17,7 +17,7 @@ Mismo formato de dos partes que el resto del catálogo:
 - **Variable (sí se pregunta):** el contenido concreto (textos, qué acción dispara) y cualquier
   caso que no encaje con claridad en ninguna variante descrita (fallback M2 — no se inventa).
 
-IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`, `V-MODAL#`,
+IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`,
 `V-MENSAJE#`, `V-CARD#`, `V-BADGE#`, `V-LOADER#`, `V-ENLACE#`, `V-ERRORCARGA#`…
 
 ## Botón

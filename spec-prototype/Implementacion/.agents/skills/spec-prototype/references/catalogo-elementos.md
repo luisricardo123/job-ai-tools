@@ -15,7 +15,7 @@ Las convenciones fijas del sistema de diseño BCP viven en la skill `bcp-design-
 contador, posición del botón de búsqueda, paginación, niveles de título, roles de color, alineación
 de columnas, formato de montos (`convenciones-bcp.md`, C1-C20); estructura de página y anatomía de
 vista (`anatomia-pagina.md`, A1-A10); y variantes de componente con su criterio de elección — énfasis
-de botón, tamaños de modal, mensajería, badges, etc. (`catalogo-variantes.md`, V-#). Las
+de botón, mensajería, badges, etc. (`catalogo-variantes.md`, V-#). Las
 reglas de proceso que gobiernan cómo se usan (aplicar en silencio, fallback, desviaciones,
 componentes con mecánica visual fija) son M1-M4, en el `SKILL.md` de `bcp-design-system`; las propias
 de esta skill (columnas largas, layout de inputs de formulario, columnas de significado ambiguo,
@@ -151,18 +151,6 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 - Nombre de cada pestaña, en orden.
 - Cuál pestaña está activa por defecto.
 - Qué contiene cada pestaña (referenciar a la vista o sección correspondiente).
-
-## Modal / ventana emergente
-- Estructura general (centrado, resto de la vista atenuado detrás, control de cierre) resuelta por
-  convención (M4) — no se pregunta ni se redescribe esa mecánica.
-- Cuál de las dos variantes de contenido corresponde (V-MODAL2): diálogo de confirmación compacto
-  (pregunta + par de acciones) o modal de contenido (título + cuerpo + par de acciones) — se
-  pregunta solo si no es evidente por el propósito del modal. El orden de los botones lo resuelve
-  C20.
-- Qué lo dispara (qué acción, en qué elemento).
-- Contenido del modal (referenciar a los elementos que contiene).
-- Cómo se cierra (botón de cierre explícito, clic fuera, botón de acción que además cierra).
-- ¿Bloquea la interacción con el resto de la vista mientras está abierto?
 
 ## Elemento de carga (loader / spinner / esqueleto)
 - Si reemplaza una sección con contenido estructurado (p. ej. contador y tabla): ocupa la posición

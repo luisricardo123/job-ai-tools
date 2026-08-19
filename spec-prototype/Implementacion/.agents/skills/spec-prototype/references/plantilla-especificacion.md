@@ -80,7 +80,7 @@ con el resto del prototipo; no hace falta repetir esto en cada vista, ya quedó 
 
 ### Inventario de elementos
 [Lista de todos los elementos presentes en la vista, con su tipo general: formulario, tabla,
-botón, selector, contador, tabs, modal, mensaje, loader, etc.]
+botón, selector, contador, tabs, mensaje, loader, etc.]
 
 ### Detalle de elementos
 [Para cada elemento del inventario, sus detalles específicos según
