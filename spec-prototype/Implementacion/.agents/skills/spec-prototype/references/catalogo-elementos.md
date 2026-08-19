@@ -140,7 +140,7 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
   contexto.
 - En qué momento aparece y en qué momento se actualiza.
 
-## Paginación (como elemento independiente)
+## Paginación
 - Posición centrada resuelta por convención (C5). No se pregunta.
 - Gestión por front sobre la totalidad de los registros ya recibidos, resuelta por convención (R10).
   No se pregunta ese mecanismo.
@@ -178,11 +178,6 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 - Si el filtro es un **rango de fechas** (fecha inicio + fecha final), es un solo componente cuyo
   valor es el rango completo (C11): su obligatoriedad y validaciones se capturan y documentan sobre
   el rango como una sola unidad, nunca sobre cada input por separado.
-
-## Slider
-- Valor mínimo, máximo y valor por defecto.
-- Incrementos permitidos.
-- ¿Muestra el valor numérico junto al control?
 
 ## Enlaces
 - Si abre un detalle relacionado con un bloque de datos, se presenta como enlace inline, no como
