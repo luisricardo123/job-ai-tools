@@ -42,8 +42,7 @@ No menciones tecnologías, frameworks ni librerías en ningún punto del documen
   tiene navegación de vuelta, el botón "Volver" precede al título en su propia fila; el título
   comparte fila con las acciones de nivel de vista, si existen; el contenido ocupa el 100% del
   ancho disponible. Añadir aquí, si aplica a alguna vista del prototipo, que sigue el patrón de
-  flujo multi-paso (indicador de progreso), de confirmación de operación (anatomía centrada), de
-  vista con pestañas, o de menú de módulo — según corresponda.]
+  confirmación de operación (anatomía centrada) o de menú de módulo — según corresponda.]
 
 ## Mapa de vistas y navegación
 - [Lista de vistas con su nombre y propósito en una línea cada una.]

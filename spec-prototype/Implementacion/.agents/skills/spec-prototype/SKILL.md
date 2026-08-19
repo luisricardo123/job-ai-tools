@@ -165,7 +165,7 @@ convenciones fijas C1-C20/A#/V-# y de las reglas de proceso M1-M4/R6/R7/R8/R9/R1
 memoria. El layout y la agrupación ya cubiertos por una convención **no se preguntan** (M1): solo se
 captura el contenido variable (textos, opciones, columnas, validaciones, datos) y cualquier
 desviación explícita (M3). Cuando el elemento es un componente con mecánica visual fija (M4, p. ej.
-un stepper o un modal), tampoco se pregunta esa mecánica — solo cuándo aparece y qué expone.
+un modal o un loader), tampoco se pregunta esa mecánica — solo cuándo aparece y qué expone.
 Excepción: el layout interno de los inputs de un formulario nunca cuenta como "ya cubierto" — R7 lo
 mantiene como pregunta obligatoria. Una columna de tabla de significado ambiguo (R8) y un dato con
 más de un formato posible (R9) tampoco cuentan como cubiertos hasta resolverlos.

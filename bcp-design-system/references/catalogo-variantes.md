@@ -18,7 +18,7 @@ Mismo formato de dos partes que el resto del catálogo:
   caso que no encaje con claridad en ninguna variante descrita (fallback M2 — no se inventa).
 
 IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`, `V-MODAL#`,
-`V-MENSAJE#`, `V-CARD#`, `V-BADGE#`, `V-LOADER#`, `V-STEPPER#`, `V-ENLACE#`, `V-ERRORCARGA#`…
+`V-MENSAJE#`, `V-CARD#`, `V-BADGE#`, `V-LOADER#`, `V-ENLACE#`, `V-ERRORCARGA#`…
 
 ## Botón
 
@@ -92,13 +92,6 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`, `V-MODA
 - **Variable:** el texto del mensaje y el tono/severidad (informativo, advertencia), si no es
   evidente por el contexto.
 
-### V-MENSAJE2 · Notificación flotante (toast): canal superpuesto, transitorio
-- **Se aplica en silencio:** una notificación transitoria tras una acción (p. ej. un error al
-  enviar una operación) aparece superpuesta sobre el contenido, no dentro del flujo normal — a
-  diferencia de V-MENSAJE1.
-- **Variable:** el texto del mensaje, el tipo, y si se cierra
-  también automáticamente tras un tiempo o solo de forma manual.
-
 ## Indicador de carga
 
 ### V-LOADER1 · Placeholder: ocupa la posición exacta del contenido que reemplaza
@@ -118,15 +111,3 @@ IDs propios de este archivo, uno por componente: `V-BOTON#`, `V-TABLA#`, `V-MODA
   búsqueda sin resultados; este es para un fallo al obtener los datos). Puede reemplazar una sección
   puntual (p. ej. bajo un formulario) o la vista completa, sin cambiar de composición.
 - **Variable:** el texto del mensaje y qué acción dispara "Reintentar".
-
-## Indicador de progreso (stepper)
-
-### V-STEPPER1 · Cuándo aparece y qué expone (M4 — no se redescribe su mecánica visual)
-- **Se aplica en silencio:** toda vista de flujo multi-paso (A5) lleva un indicador de progreso,
-  ubicado entre "Volver" y el título (A5), que expone tres estados por paso — **completado**,
-  **actual**, **pendiente** — y el nombre de cada paso. Por M4, su mecánica visual interna (forma
-  de los círculos, estilo de la línea que los conecta, ícono de completado) la resuelve el propio
-  componente del sistema de diseño: no hace falta describirla ni reconstruirla, solo registrar que
-  el flujo tiene un indicador de progreso con esos tres estados y esos pasos.
-- **Variable:** la cantidad y el nombre de cada paso del flujo concreto, y en cuál se encuentra el
-  usuario en cada momento.

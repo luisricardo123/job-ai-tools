@@ -15,7 +15,7 @@ Las convenciones fijas del sistema de diseño BCP viven en la skill `bcp-design-
 contador, posición del botón de búsqueda, paginación, niveles de título, roles de color, alineación
 de columnas, formato de montos (`convenciones-bcp.md`, C1-C20); estructura de página y anatomía de
 vista (`anatomia-pagina.md`, A1-A10); y variantes de componente con su criterio de elección — énfasis
-de botón, tamaños de modal, mensajería, badges, stepper, etc. (`catalogo-variantes.md`, V-#). Las
+de botón, tamaños de modal, mensajería, badges, etc. (`catalogo-variantes.md`, V-#). Las
 reglas de proceso que gobiernan cómo se usan (aplicar en silencio, fallback, desviaciones,
 componentes con mecánica visual fija) son M1-M4, en el `SKILL.md` de `bcp-design-system`; las propias
 de esta skill (columnas largas, layout de inputs de formulario, columnas de significado ambiguo,
@@ -205,19 +205,6 @@ Ejemplo: una sección que muestra "Producto: Producto 1", "Estado: Activo", "Can
 ## Ícono interactivo (con acción propia, no decorativo)
 - Qué ícono representa (su significado funcional).
 - Qué acción dispara al interactuar con él.
-
-## Indicador de progreso (stepper, en un flujo multi-paso)
-- Posición (entre "Volver" y el título — A5) y los tres estados que expone por paso (completado,
-  actual, pendiente) resueltos por convención (V-STEPPER1, M4) — no se pregunta ni se redescribe su
-  mecánica visual.
-- Cantidad y nombre de cada paso del flujo concreto.
-- En cuál paso se encuentra el usuario en cada momento del flujo.
-
-## Notificación / mensaje tipo toast
-- Canal (superpuesto, transitorio) resuelto por convención (V-MENSAJE2). No se pregunta.
-- Qué acción la dispara.
-- Tipo de mensaje (éxito, error, advertencia, información) y su texto.
-- Duración o forma de cierre (automática, manual).
 
 ## Alerta informativa inline (banda de mensaje dentro del flujo de contenido)
 - Canal (inline, dentro del flujo normal de contenido) resuelto por convención (V-MENSAJE1). No se

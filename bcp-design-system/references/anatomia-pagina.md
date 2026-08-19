@@ -29,8 +29,7 @@ contenido que la shell le entrega.
 - **Se aplica en silencio:** lo primero que renderiza el módulo, arriba de todo, es el título
   principal de la vista (C6). **Excepción:** si la vista tiene navegación de regreso a una vista
   anterior, el botón "Volver" (C12) va primero, en su propia fila completa, y el título queda
-  debajo de él, en la fila siguiente. Cuando la vista además tiene un indicador de progreso
-  multi-paso, este se ubica entre "Volver" y el título (ver A5).
+  debajo de él, en la fila siguiente.
 - **Variable:** si la vista concreta tiene o no navegación de vuelta.
 
 ## A2 · Título y acciones de nivel de vista: misma fila
@@ -51,15 +50,6 @@ contenido que la shell le entrega.
   ocupa el 100% del ancho que le entrega la shell, siempre respetando el margen horizontal y
   vertical fijo de C16 (nunca pegado a los bordes de su propio contenedor).
 - **Variable:** nada — es fijo; no se pregunta.
-
-## A5 · Vista de flujo multi-paso (wizard): indicador de progreso entre "Volver" y el título
-- **Se aplica en silencio:** cuando una funcionalidad se completa en varios pasos secuenciales
-  (p. ej. "Forma de ingreso → Datos generales → Aceptantes → Validación"), la página incluye un
-  indicador de progreso (stepper — ver detalle de variante en `catalogo-variantes.md`) centrado,
-  ubicado entre el botón "Volver" (A1) y el título de la vista. El título y el texto instructivo
-  (A3) se mantienen iguales en cada paso del flujo (el título no cambia por paso, salvo que el
-  usuario indique lo contrario). Al final de la página va una barra de acciones fija (ver A10).
-- **Variable:** la cantidad y nombre de los pasos del flujo concreto.
 
 ## A6 · Vista de confirmación/resultado de una operación: anatomía propia, centrada
 - **Se aplica en silencio:** al completarse una operación (envío, registro, solicitud), la vista de
@@ -85,7 +75,7 @@ contenido que la shell le entrega.
   bloque.
 
 ## A10 · Barra de acciones fija al final de un flujo multi-paso
-- **Se aplica en silencio:** en una vista de flujo multi-paso (A5), las acciones de navegación del
+- **Se aplica en silencio:** en una vista de flujo multi-paso, las acciones de navegación del
   paso (cancelar, continuar, guardar, enviar) van en una barra al final de la página, visualmente
   distinguida del contenido, ordenadas según C20 (menor a mayor compromiso, izquierda a derecha):
   cancelar/salir del flujo a la izquierda; la o las acciones de avance (continuar, guardar y enviar,
